@@ -1,5 +1,18 @@
 #!/usr/bin/env node
 
+/*
+`command` set the arguments and some default settings,
+then run the corresponding function to get the result. 
+
+`conf` for set the configuration
+
+`helpers` for get some helps when run this application.
+
+`cash` issued from the converting of currencies.
+
+`argv' like a list for JavaScript.
+*/
+
 const Conf = require('conf');
 const helpers = require('./helpers.js');
 const cash = require('./cash.js');
