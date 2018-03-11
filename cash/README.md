@@ -1,10 +1,8 @@
 # Cash
 
-[TOC]
-
 ## Introduction
 
-`cash` is a web application written in JavaScript that aims to convert various currencies by just one single command line. 
+"Cash" is a web application written in JavaScript that aims to convert various currencies by just one single command line. 
 
 ---
 
@@ -58,7 +56,7 @@ __Attention: The US dollar is the currency by default setting by this app.__
 
 ### Usage of commande
 
-Use commandes by execute: 
+Use commandes by execute:
 
 ```bash
 node bin/index.js <command>
@@ -115,7 +113,7 @@ node bin/index.js <command>
 
 ## Example:
 
-EX.1 Want to know 100 Chinese Yuan could exchange how much the currencies by default. 
+EX.1 Want to know 100 Chinese Yuan could exchange how much the currencies by default.
 
 ```bash
 node bin/index.js 100 cny
@@ -129,7 +127,7 @@ The result is:
 
 > ✔ 11.41 (GBP) Pound Sterling
 
-EX.2 Want to know 100 Chinese Yuan could exchange how much Hong Kong Dollar, South Korean Won ou Japanes Yen. 
+EX.2 Want to know 100 Chinese Yuan could exchange how much Hong Kong Dollar, South Korean Won ou Japanes Yen.
 
 ```bash
 node bin/index.js 100 cny hkd krw jpy
