@@ -1,4 +1,5 @@
 /*eslint-disable no-process-exit*/
+
 const chalk = require('chalk');
 const updateNotifier = require('update-notifier');
 const Conf = require('conf');
@@ -8,6 +9,8 @@ const config = new Conf();
 
 updateNotifier({pkg}).notify();
 
+
+//Change and save the default currencies configuration entered by replace.
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
   config.set(
@@ -20,11 +23,13 @@ const saveCurrencies = argv => {
   process.exit(1);
 };
 
+//Display the current version of this application.
 const version = () => {
   console.log(pkg.version);
   process.exit(1);
 };
 
+// Display help and other informations, like commands and examples.
 const help = () => {
   console.log(`
 Usage:
